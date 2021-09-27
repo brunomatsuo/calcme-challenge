@@ -1,8 +1,7 @@
-package com.calcme.challenge;
+package com.calcme.challenge.service;
 
 import com.calcme.challenge.model.User;
 import com.calcme.challenge.repository.UserRepository;
-import com.calcme.challenge.service.UserService;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

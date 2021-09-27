@@ -18,12 +18,12 @@ public class UserController {
     private UserService service;
 
     @GetMapping
-    public List<User> getUsers() {
+    public List<User> getAllUsers() {
         return service.findAll();
     }
 
     @PostMapping
-    public ResponseEntity addUser(@RequestBody User user) {
+    public ResponseEntity createUser(@RequestBody User user) {
 		User savedUser = service.save(user);
         return new ResponseEntity(savedUser, HttpStatus.OK);
     }
